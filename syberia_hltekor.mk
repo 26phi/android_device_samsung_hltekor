@@ -14,9 +14,11 @@
 # limitations under the License.
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
 
 $(call inherit-product, device/samsung/hltekor/full_hlte.mk)
 
 PRODUCT_DEVICE := hltekor
-PRODUCT_NAME := lineage_hltekor
+PRODUCT_NAME := syberia_hltekor
+
+TARGET_BOOT_ANIMATION_RES := 1080
